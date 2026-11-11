@@ -1,5 +1,5 @@
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: "Inter", system-ui, sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -288,3 +288,20 @@ body.light {
 }
 
 
+
+/* Small screens */
+@media (max-width: 768px) {
+  .dashboard {
+    padding: 14px;
+  }
+  .charts-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+}

@@ -7,7 +7,7 @@
 
 /* BEST SELLING */
 .best-products {
-  background: var(--card-bg, #fff);
+  background: var(--card-bg, rgba(255, 255, 255, 0.05));
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.05);
@@ -44,7 +44,7 @@
 
 /* ACTIVITY */
 .activity-section {
-  background: var(--card-bg, #fff);
+  background: var(--card-bg, rgba(255, 255, 255, 0.05));
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.05);
@@ -84,8 +84,14 @@
 }
 
 .page-card {
-  background: var(--card-bg, #fff);
+  background: var(--card-bg, rgba(255, 255, 255, 0.05));
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+/* Light theme: solid cards so text stays readable */
+.dashboard.light .best-products,
+.dashboard.light .activity-section {
+  background: #fff;
 }

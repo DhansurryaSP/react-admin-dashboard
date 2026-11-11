@@ -14,7 +14,9 @@ import {
 } from "react-icons/fa";
 
 function Sidebar() {
-  const [collapsed, setCollapsed] = useState(false);
+  const [collapsed, setCollapsed] = useState(
+    () => typeof window !== "undefined" && window.innerWidth < 768
+  );
 
   const menuItems = [
     { name: "Dashboard", path: "/", icon: <FaHome /> },
@@ -36,7 +38,7 @@ function Sidebar() {
         <button onClick={() => setCollapsed(!collapsed)} className="collapse-btn">
           <FaBars />
         </button>
-        {!collapsed && <h2 className="logo">MyApp</h2>}
+        {!collapsed && <h2 className="logo">Admin Dashboard</h2>}
       </div>
 
       <ul>

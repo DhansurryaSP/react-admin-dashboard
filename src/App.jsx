@@ -15,7 +15,7 @@ function App() {
   return (
     <div style={{ display: "flex", minHeight: "100vh" }}>
       <Sidebar />
-      <div style={{ flex: 1, padding: "20px" }}>
+      <div style={{ flex: 1, minWidth: 0 }}>
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/products" element={<Products />} />
